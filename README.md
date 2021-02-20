@@ -2,3 +2,4 @@
 
 * OkHttp
 * JUnit
+* Jackson ObjectMapper
