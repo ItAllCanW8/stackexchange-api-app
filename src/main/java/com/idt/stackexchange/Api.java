@@ -15,8 +15,7 @@ public class Api {
     public static Response getResponse(Request request) throws IOException {
         OkHttpClient client = new OkHttpClient();
         Call call = client.newCall(request);
-        Response response = call.execute();
 
-        return response;
+        return call.execute();
     }
 }

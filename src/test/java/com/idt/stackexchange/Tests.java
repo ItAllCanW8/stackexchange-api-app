@@ -46,12 +46,9 @@ class Tests {
 
         boolean lessThanTenRecords;
 
-        if(responsePOJO.getItems().size() <= 10)
-            lessThanTenRecords = true;
-        else
-            lessThanTenRecords = false;
+        lessThanTenRecords = responsePOJO.getItems().size() <= 10;
 
-        assertEquals(true, lessThanTenRecords);
+        assertTrue(lessThanTenRecords);
     }
 
     //test that each element of the array contains an Owner object
